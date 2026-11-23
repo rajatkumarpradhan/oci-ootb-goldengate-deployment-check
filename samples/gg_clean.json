@@ -1,0 +1,10 @@
+{
+  "deployments": [
+    {"name": "orders-replication", "environment": "production", "auto_scaling": true,
+     "is_public": false, "has_backup_schedule": true, "description": "orders replication",
+     "tags": ["team:data", "env:prod"]},
+    {"name": "sandbox", "environment": "development", "auto_scaling": false,
+     "is_public": false, "has_backup_schedule": false, "description": "dev sandbox",
+     "tags": ["team:data"]}
+  ]
+}
