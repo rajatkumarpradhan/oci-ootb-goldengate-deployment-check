@@ -1,0 +1,11 @@
+{
+  "deployments": [
+    {"name": "orders-replication", "environment": "production", "auto_scaling": false,
+     "is_public": false, "has_backup_schedule": true, "description": "", "tags": []},
+    {"name": "legacy-sync", "environment": "production", "auto_scaling": true,
+     "is_public": true, "has_backup_schedule": false, "description": "legacy sync",
+     "tags": ["team:data"]},
+    {"name": "scratch", "environment": "development", "auto_scaling": false,
+     "is_public": true, "has_backup_schedule": false, "description": "", "tags": []}
+  ]
+}
